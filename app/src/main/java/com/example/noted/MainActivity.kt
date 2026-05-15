@@ -1,22 +1,32 @@
-package com.example.noted;
+package com.example.noted
 
-import android.os.Bundle;
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import com.example.noted.database.NoteDatabase
+import com.example.noted.reposatory.NoteReposatory
+import com.example.noted.viewmodel.NoteViewModel
+import com.example.noted.viewmodel.NoteViewmodelFactory
+import com.example.notesroompractice.R
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+class MainActivity : AppCompatActivity() {
+    lateinit var noteViewModel: NoteViewModel
 
-import com.example.notesroompractice.R;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        this.enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+        intiViewmodel()
 
-public class MainActivity extends AppCompatActivity {
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+    private fun intiViewmodel(){
+            val noteReposatory= NoteReposatory(NoteDatabase(this))
+            val viewModelProviderFactory= NoteViewmodelFactory(application,
+                noteReposatory = noteReposatory)
+
+            noteViewModel= ViewModelProvider(this,viewModelProviderFactory)[NoteViewModel::class.java]
 
     }
 }
