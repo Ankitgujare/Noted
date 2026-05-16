@@ -21,11 +21,7 @@ interface NoteDao {
     suspend fun updateNote(notes: Note)
 
     @Query("SELECT * FROM NOTES")
-    suspend fun getAllNotes()
-
-
-    @Query("SELECT * FROM NOTES ORDER BY id DESC" )
-    suspend fun getNote()
+    fun getAllNotes(): LiveData<List<Note>>
 
      @Query("SELECT * FROM NOTES WHERE noteTitle Like :query OR noteDescription Like :query")
      fun searchNotes(query: String?): LiveData<List<Note>>

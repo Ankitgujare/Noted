@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun intiViewmodel(){
             val noteReposatory= NoteReposatory(NoteDatabase(this))
-            val viewModelProviderFactory= NoteViewmodelFactory(application,
+            val viewModelProviderFactory=   NoteViewmodelFactory(application,
                 noteReposatory = noteReposatory)
 
             noteViewModel= ViewModelProvider(this,viewModelProviderFactory)[NoteViewModel::class.java]

@@ -9,7 +9,7 @@ class NoteReposatory(val noteDatabase: NoteDatabase) {
     suspend fun delete(notes: Note)=noteDatabase.getNoteDao().deleteNote(notes)
     suspend fun update(notes: Note)=noteDatabase.getNoteDao().updateNote(notes)
     fun search(query:String?)=noteDatabase.getNoteDao().searchNotes(query)
-    fun getAllNotes()=noteDatabase.getNoteDao()
+    fun getAllNotes()=noteDatabase.getNoteDao().getAllNotes()
 
 
 
