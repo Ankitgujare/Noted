@@ -113,10 +113,15 @@ Feel free to fork the repository and submit a pull request.
 
 If you have any suggestions or feedback, feel free to connect.
 
+Homescreen
 ![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/homescreen.jpeg)
+AddNoteScreen
 ![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/AddNotescreen.jpeg)
+DeleteNotesScreen
 ![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/Deletescreen.jpeg)
+EditNoteScreen
 ![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/EditScreen.jpeg)
+RecyclerViewScreen
 ![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/RecyclerViewScreen.jpeg)
 
 
