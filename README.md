@@ -109,6 +109,15 @@ Android Jetpack Libraries
 Contributions, suggestions, and improvements are always welcome.
 Feel free to fork the repository and submit a pull request.
 
-📧 Contact
+📧 Contact ankitgujare008@gmail.com
 
 If you have any suggestions or feedback, feel free to connect.
+
+![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/homescreen.jpeg)
+![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/AddNotescreen.jpeg)
+![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/Deletescreen.jpeg)
+![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/EditScreen.jpeg)
+![Image Alt](https://github.com/Ankitgujare/Noted/blob/4d4dee8389c6b8c47ddf7f53c208b2bad878edf5/RecyclerViewScreen.jpeg)
+
+
+
